@@ -1,0 +1,241 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ .container{
+    width: 1407px;
+    margin: 0px auto;
+ }
+
+ ul,ol{
+    list-style: none;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+/* =====================
+nav start
+======================== */
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .box{
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+}
+nav .nav-items{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-items ul{
+    display: flex;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .nav-items ul li i{
+    margin-left: 14px;
+}
+
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+nav .button a{
+    display: inline-block;
+    background:#FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    border: transparent 1px solid;
+    transition: .5s;
+}
+
+nav .button a:hover{
+    background: transparent;
+    border-color: #FF5538;
+    color: #FF5538;
+}
+/* =====================
+nav end
+======================== */
+/* =====================
+banner start
+======================== */
+.banner{
+    background: url(../images/banner.png);
+    padding: 300px 0;
+    position: relative;
+}
+
+.banner .round-shape {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 171, 186);
+    border-radius: 50%;
+    position: absolute;
+    top: 145px;
+    left: 833px;
+    animation: 4s linear 0s infinite normal none running rotate;
+}
+.banner .round-shape .inner-shape {
+    width: 20px;
+    height: 20px;
+    background: #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+}
+
+.banner .dot {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    right: 744px;
+    animation: tb 2s infinite alternate linear;
+}
+
+@keyframes tb{
+    from{
+        transform: translateY(0);
+    }to{
+        transform: translateY(50px);
+    }
+}
+
+.banner .cross {
+    width: 20px;
+    height: 20px;
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 332px;
+    left: 590px;
+    animation: rotate 4s infinite linear;
+}
+.banner .cross2 {
+    width: 20px;
+    height: 20px;
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 332px;
+    right: 590px;
+    animation: 4s linear 0s infinite normal none running rotate;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.banner h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29313D;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+}
+
+.banner p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    width: 547px;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner .button{
+    text-align: center;
+}
+
+.banner .button a{
+    display: inline-block;
+    background:#FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: transparent 1px solid;
+    transition: .5s;
+}
+
+.banner .button a:hover{
+    background: transparent;
+    border-color: #FF5538;
+    color: #FF5538;
+}
+/* =====================
+banner end
+======================== */
+/* =====================
+service part start
+======================== */
+.service .item p{
+    font-family: ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6C717A;
+}
+ .service .item h3{
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px;
+ }
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+ .service .item {
+    width: 32%;
+    background: white;
+    -webkit-box-shadow: 7px 9px 43px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 9px 43px -7px rgba(0,0,0,0.75);
+    box-shadow: 7px 9px 43px -7px rgba(0,0,0,0.75);
+    padding: 30px 40px;
+    box-sizing: border-box;
+ }
+/* =====================
+service part end
+======================== */
